@@ -3,11 +3,11 @@
  * @Usage: 接收处理路由参数
  * @Author: xxx
  * @Date: 2020-12-22 15:24:25
- * @LastEditTime: 2022-03-08 10:52:05
+ * @LastEditTime: 2022-03-08 14:46:38
  */
 
 import { KoattyContext, Controller, HttpController, Autowired, GetMapping } from 'koatty';
-import { App } from '../../App';
+import { App } from '../App';
 // import { TestService } from '../service/TestService';
 
 @Controller('/v1')

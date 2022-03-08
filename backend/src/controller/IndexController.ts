@@ -2,39 +2,87 @@
  * @Description: 业务层
  * @Usage: 接收处理路由参数
  * @Author: xxx
- * @Date: 2020-12-22 15:24:25
- * @LastEditTime: 2022-03-08 10:52:24
+ * @Date: 2020-12-22 15:31:17
+ * @LastEditTime: 2022-03-08 14:47:01
  */
 
-import { KoattyContext, Controller, HttpController, Autowired, GetMapping } from 'koatty';
+import { Controller, Autowired, GetMapping, Post, PostMapping, KoattyContext, Before, HttpController, Get, Config } from 'koatty';
+import { BannerType, MvArea } from 'NeteaseCloudMusicApi';
 import { App } from '../App';
-// import { TestService } from '../service/TestService';
+import { ApiService } from "../service/ApiService";
 
-@Controller('/')
+@Controller('/v1')
 export class IndexController extends HttpController {
   app: App;
   ctx: KoattyContext;
 
-  // @Autowired()
-  // protected TestService: TestService;
+  @Autowired()
+  apiService: ApiService;
 
   /**
-   * Custom constructor
-   *
+   * @api {get} / index接口
+   * @apiGroup Test
+   * 
+   * 
+   * @apiSuccessExample {json} Success
+   * {"code":1,"message":"","data":{}}
+   * 
+   * @apiErrorExample {json} Error
+   * {"code":0,"message":"错误信息","data":null}
    */
-  init() {
-    //todo
+  @GetMapping("/personalized/newsong")
+  newSong(@Get("limit") limit = 10): Promise<any> {
+    return this.apiService.newSong(limit);
   }
 
-  /**
-   * index 接口
-   *
-   * @returns
-   * @memberof IndexController
-   */
-  @GetMapping('/')
-  index(): Promise<any> {
-    return this.ctx.render('index.html');
+  @GetMapping("/personalized")
+  personalized(@Get("limit") limit = 10): Promise<any> {
+    return this.apiService.personalized(limit);
   }
 
+  @GetMapping("/banner")
+  banner(@Get("type") type: BannerType = 0) {
+    return this.apiService.banner(type);
+  }
+
+  @GetMapping("/personalized/mv")
+  mv() {
+    return this.apiService.mv();
+  }
+
+  @GetMapping("/personalized/djprogram")
+  djprogram() {
+    return this.apiService.djprogram();
+  }
+  @GetMapping("/playlist/catlist")
+  catlist() {
+    return this.apiService.catlist();
+  }
+  @GetMapping("/lyric")
+  lyric(@Get("id") id: number) {
+    return this.apiService.lyric(id);
+  }
+  @GetMapping("/song/detail")
+  detail(@Get("ids") ids: string) {
+    return this.apiService.songDetail(ids);
+  }
+  @GetMapping("/song/url")
+  url(@Get("id") id: string, @Get("br") br = 999000) {
+    return this.apiService.songUrl(id, br);
+  }
+
+  @GetMapping("/top/mv")
+  topMv(@Get("limit") limit = 10, @Get("area") area: MvArea = MvArea.all, @Get("offset") offset = 0) {
+    return this.apiService.topMv(limit, area, offset);
+  }
+
+  @GetMapping("/top/playlist/highquality")
+  topPlaylistHighquality(@Get("limit") limit = 10, @Get("cat") cat: string, @Get("before") before = 0) {
+    return this.apiService.topPlaylistHighquality(limit, cat, before);
+  }
+
+  @GetMapping("/playlist/detail")
+  playlistDetail(@Get("id") id: number, @Get("s") s = 8) {
+    return this.apiService.playlistDetail(id, s);
+  }
 }

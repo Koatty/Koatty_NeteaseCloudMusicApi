@@ -3,10 +3,11 @@
  * @Usage: 接收处理路由参数
  * @Author: xxx
  * @Date: 2020-12-22 15:31:17
- * @LastEditTime: 2022-03-08 14:47:01
+ * @LastEditTime: 2022-03-09 18:54:59
  */
 
-import { Controller, Autowired, GetMapping, Post, PostMapping, KoattyContext, Before, HttpController, Get, Config } from 'koatty';
+import { Controller, Autowired, GetMapping, Post, PostMapping, KoattyContext, Before, HttpController, Get, Config, RequestParam } from 'koatty';
+import { Valid, Validated } from 'koatty_validation';
 import { BannerType, MvArea } from 'NeteaseCloudMusicApi';
 import { App } from '../App';
 import { ApiService } from "../service/ApiService";
@@ -59,15 +60,15 @@ export class IndexController extends HttpController {
     return this.apiService.catlist();
   }
   @GetMapping("/lyric")
-  lyric(@Get("id") id: number) {
+  lyric(@Get("id") @Valid(["IsNotEmpty", "IsNotIn"], { message: "id is not empty", value: [111] }) id: number) {
     return this.apiService.lyric(id);
   }
   @GetMapping("/song/detail")
-  detail(@Get("ids") ids: string) {
+  detail(@Get("ids") @Valid("IsNotEmpty", "ids is not empty") ids: string) {
     return this.apiService.songDetail(ids);
   }
   @GetMapping("/song/url")
-  url(@Get("id") id: string, @Get("br") br = 999000) {
+  url(@Get("id") @Valid("IsNotEmpty", "id is not empty") id: string, @Get("br") br = 999000) {
     return this.apiService.songUrl(id, br);
   }
 

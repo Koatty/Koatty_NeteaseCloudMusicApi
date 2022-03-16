@@ -3,10 +3,13 @@
  * @Usage: 接收处理路由参数
  * @Author: xxx
  * @Date: 2020-12-22 15:31:17
- * @LastEditTime: 2022-03-09 18:54:59
+ * @LastEditTime: 2022-03-15 18:35:50
  */
 
-import { Controller, Autowired, GetMapping, Post, PostMapping, KoattyContext, Before, HttpController, Get, Config, RequestParam } from 'koatty';
+import {
+  Controller, Autowired, GetMapping, Post, PostMapping, KoattyContext,
+  Before, HttpController, Get, Config, RequestParam
+} from 'koatty';
 import { Valid, Validated } from 'koatty_validation';
 import { BannerType, MvArea } from 'NeteaseCloudMusicApi';
 import { App } from '../App';

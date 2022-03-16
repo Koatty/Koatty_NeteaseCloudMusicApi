@@ -1155,6 +1155,14 @@
     "@grpc/proto-loader" "^0.6.4"
     "@types/node" ">=12.12.47"
 
+"@grpc/grpc-js@^1.5.7":
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-1.5.8.tgz#ae42b78a1de8dfabeb638d93dabb1c2e27ca0e34"
+  integrity sha512-sfoF2yMVJcqEoX8E3o9+idUckv/w4cM+lt3U7Qz6GUBLgxAh1NS/3fEZKOMhwdvOEgWvPqbls/EgLXGKI0sm2A==
+  dependencies:
+    "@grpc/proto-loader" "^0.6.4"
+    "@types/node" ">=12.12.47"
+
 "@grpc/proto-loader@^0.6.4", "@grpc/proto-loader@^0.6.9":
   version "0.6.9"
   resolved "https://registry.npmjs.org/@grpc/proto-loader/-/proto-loader-0.6.9.tgz"
@@ -5465,23 +5473,23 @@ koa@2.13.4:
     type-is "^1.6.16"
     vary "^1.1.2"
 
-koatty@^3.6.7:
-  version "3.6.7"
-  resolved "https://registry.yarnpkg.com/koatty/-/koatty-3.6.7.tgz#409fc8d987d598c71918da105da793a9af4bbf26"
-  integrity sha512-BB/yFeHvcJlEZvultAfbCwdUfC7b12MTWM4sMgaQE2ELujAH4fFdhuWtj+d1EBOxB4X0/tqZkcarjfZjHqTbJQ==
+koatty@^3.6.8-0:
+  version "3.6.8-2"
+  resolved "https://registry.yarnpkg.com/koatty/-/koatty-3.6.8-2.tgz#7a76b71af9bc3e4b67503a394a20efa7b41d830c"
+  integrity sha512-wvXabWWSQc7ua7irWYfzzxBolSe7FLwTyjB2/cOE2LW91Vf0RzJSdIBdYflQHys4TbNCuGmTtbS+7uBaTlT5sA==
   dependencies:
     koa "2.13.4"
     koatty_config "1.1.2"
     koatty_container "1.7.7"
-    koatty_core "1.6.1"
+    koatty_core "1.6.5"
     koatty_exception "1.2.6"
     koatty_lib "1.2.10"
     koatty_loader "1.0.2"
     koatty_logger "1.3.12"
-    koatty_payload "1.3.15"
+    koatty_payload "1.3.16"
     koatty_proto "1.1.6"
-    koatty_router "1.7.3"
-    koatty_serve "1.4.8"
+    koatty_router "1.7.5"
+    koatty_serve "1.4.9"
     koatty_trace "1.6.6"
     reflect-metadata "0.1.13"
     tslib "2.3.1"
@@ -5516,7 +5524,21 @@ koatty_container@1.7.7, koatty_container@^1.x.x:
     reflect-metadata "^0.1.13"
     tslib "^2.3.1"
 
-koatty_core@1.6.1, koatty_core@^1.x.x:
+koatty_core@1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/koatty_core/-/koatty_core-1.6.5.tgz#63b11900daeccf5d3d657d3e684983b0053d8dc5"
+  integrity sha512-hDq7YNnRYn58x0175nSHgG36rE1TN7+dPSrPOtw6oxM3DfcbzNXTgombal68Dbkj2QBL1EkfdQO9u8LA7ns5tg==
+  dependencies:
+    http-assert "^1.5.0"
+    koa-compose "^4.1.0"
+    koatty_container "^1.x.x"
+    koatty_exception "^1.x.x"
+    koatty_lib "^1.x.x"
+    koatty_logger "^1.x.x"
+    on-finished "^2.3.0"
+    tslib "^2.3.1"
+
+koatty_core@^1.x.x:
   version "1.6.1"
   resolved "https://registry.npmjs.org/koatty_core/-/koatty_core-1.6.1.tgz"
   integrity sha512-alTfsx3CH/Obn2quZDiRHkG1EHZGV6Oen6YALU3USMgumlSCj8BM6rZnf3I06QeTiArZa6qT3DOJBXg2ZmmhRw==
@@ -5566,10 +5588,10 @@ koatty_logger@1.3.12, koatty_logger@^1.x.x:
   dependencies:
     koatty_lib "^1.x.x"
 
-koatty_payload@1.3.15:
-  version "1.3.15"
-  resolved "https://registry.yarnpkg.com/koatty_payload/-/koatty_payload-1.3.15.tgz#783594cbb8d541c08227f4059911c4337929369a"
-  integrity sha512-ekrCXFrbcNMwGQy+hQT9YyKHDd2EUb48LuKmhOMRDwRYC3hoaWm1lDSMTViqpW7dCKXVyOCivfw012dea+OMhw==
+koatty_payload@1.3.16:
+  version "1.3.16"
+  resolved "https://registry.yarnpkg.com/koatty_payload/-/koatty_payload-1.3.16.tgz#e6b72db6fd26ca74600de84f238346bc445486fd"
+  integrity sha512-5YKtu/78uwPIp5gqa+hasofL17RcWfPWUJGBuU485e8I4YrUJ6CUNHwiVr10Lv0q3kIK2GoCE3n6v+ZTYlbOlA==
   dependencies:
     formidable "^2.0.1"
     inflation "^2.0.0"
@@ -5589,12 +5611,11 @@ koatty_proto@1.1.6, koatty_proto@^1.x.x:
     koatty_lib "^1.x.x"
     protobufjs "^6.11.2"
 
-koatty_router@1.7.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/koatty_router/-/koatty_router-1.7.3.tgz#cac20b62f6ffa9e9b44178e45d5347d29bf6d517"
-  integrity sha512-YEY7Z6+wjHX6TRMOKLfGoB68wmmLngCVBwWU/u43l160fh85aYWJ8aycZU3ZVwth9/mKODcjxSmV//KWiG5IgQ==
+koatty_router@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/koatty_router/-/koatty_router-1.7.5.tgz#2d4b182446e5c49924ce2430251c216d785ce921"
+  integrity sha512-uOA1qcuOVsXV8yG1JdMaVmoX+p5UZtLJhRXYwX/3FKe+2FMvUrXgZq35eDL+BfCTVW/slR9+o2UtM43CFe3FRA==
   dependencies:
-    "@grpc/grpc-js" "^1.5.5"
     "@koa/router" "^10.1.1"
     koatty_container "^1.x.x"
     koatty_core "^1.x.x"
@@ -5618,13 +5639,13 @@ koatty_schedule@^1.5.5:
     reflect-metadata "^0.1.13"
     tslib "^2.3.1"
 
-koatty_serve@1.4.8:
-  version "1.4.8"
-  resolved "https://registry.npmjs.org/koatty_serve/-/koatty_serve-1.4.8.tgz"
-  integrity sha512-4YGDJxYAcolKdze3uLMwTpGGyssVAXokl/+e2ceFVdui6rrv9t5VUqWZvbblY9MvtfBOSvA3LjSwAF1FWlTmoA==
+koatty_serve@1.4.9:
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/koatty_serve/-/koatty_serve-1.4.9.tgz#cae90963302648872e7932aab264f5d0697ac574"
+  integrity sha512-YnkBWo2q6cWu7xH85gYby7hFZ11vr7XETI21EoCBd8cc+BcFAN9KU/SS3CXNn3qSa5zRk6J9TGw4PCN7NsRXXg==
   dependencies:
     "@godaddy/terminus" "^4.10.2"
-    "@grpc/grpc-js" "^1.5.5"
+    "@grpc/grpc-js" "^1.5.7"
     koatty_core "^1.x.x"
     koatty_lib "^1.x.x"
     koatty_logger "^1.x.x"

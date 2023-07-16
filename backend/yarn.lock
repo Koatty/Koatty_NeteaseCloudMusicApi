@@ -1009,28 +1009,22 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@godaddy/terminus@^4.10.2":
-  version "4.11.0"
-  resolved "https://registry.npmjs.org/@godaddy/terminus/-/terminus-4.11.0.tgz"
+"@grpc/grpc-js@^1.8.11":
+  version "1.8.18"
+  resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-1.8.18.tgz#fdbf2728064fd3db7e72e970372db28bd0f6fafb"
   dependencies:
-    stoppable "^1.1.0"
-
-"@grpc/grpc-js@^1.6.7":
-  version "1.6.7"
-  resolved "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-1.6.7.tgz"
-  dependencies:
-    "@grpc/proto-loader" "^0.6.4"
+    "@grpc/proto-loader" "^0.7.0"
     "@types/node" ">=12.12.47"
 
-"@grpc/proto-loader@^0.6.12", "@grpc/proto-loader@^0.6.4":
-  version "0.6.13"
-  resolved "https://registry.npmjs.org/@grpc/proto-loader/-/proto-loader-0.6.13.tgz"
+"@grpc/proto-loader@^0.7.0", "@grpc/proto-loader@^0.7.5":
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/@grpc/proto-loader/-/proto-loader-0.7.8.tgz#c050bbeae5f000a1919507f195a1b094e218036e"
   dependencies:
     "@types/long" "^4.0.1"
     lodash.camelcase "^4.3.0"
     long "^4.0.0"
-    protobufjs "^6.11.3"
-    yargs "^16.2.0"
+    protobufjs "^7.2.4"
+    yargs "^17.7.2"
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
@@ -1254,15 +1248,14 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@koa/router@^10.1.1":
-  version "10.1.1"
-  resolved "https://registry.npmjs.org/@koa/router/-/router-10.1.1.tgz"
+"@koa/router@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@koa/router/-/router-12.0.0.tgz#2ae7937093fd392761c0e5833c368379d4a35737"
   dependencies:
-    debug "^4.1.1"
-    http-errors "^1.7.3"
+    http-errors "^2.0.0"
     koa-compose "^4.1.0"
     methods "^1.1.2"
-    path-to-regexp "^6.1.0"
+    path-to-regexp "^6.2.1"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1583,6 +1576,10 @@
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@types/stack-utils/-/stack-utils-2.0.1.tgz"
+
+"@types/validator@^13.7.10":
+  version "13.7.17"
+  resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.7.17.tgz#0a6d1510395065171e3378a4afc587a3aefa7cc1"
 
 "@types/validator@^13.x.x":
   version "13.7.1"
@@ -2297,11 +2294,12 @@ cjs-module-lexer@^1.0.0:
   version "1.2.2"
   resolved "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz"
 
-class-validator@^0.13.2:
-  version "0.13.2"
-  resolved "https://registry.npmjs.org/class-validator/-/class-validator-0.13.2.tgz"
+class-validator@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/class-validator/-/class-validator-0.14.0.tgz#40ed0ecf3c83b2a8a6a320f4edb607be0f0df159"
   dependencies:
-    libphonenumber-js "^1.9.43"
+    "@types/validator" "^13.7.10"
+    libphonenumber-js "^1.10.14"
     validator "^13.7.0"
 
 clean-stack@^2.0.0:
@@ -2322,6 +2320,14 @@ cliui@^7.0.2:
   dependencies:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
+    wrap-ansi "^7.0.0"
+
+cliui@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/cliui/-/cliui-8.0.1.tgz#0c04b075db02cbfe60dc8e6cf2f5486b1a3608aa"
+  dependencies:
+    string-width "^4.2.0"
+    strip-ansi "^6.0.1"
     wrap-ansi "^7.0.0"
 
 clone-deep@^4.0.1:
@@ -3376,6 +3382,12 @@ file-entry-cache@^6.0.1:
   dependencies:
     flat-cache "^3.0.4"
 
+file-stream-rotator@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/file-stream-rotator/-/file-stream-rotator-0.6.1.tgz#007019e735b262bb6c6f0197e58e5c87cb96cec3"
+  dependencies:
+    moment "^2.29.1"
+
 file-type@16.5.3:
   version "16.5.3"
   resolved "https://registry.npmjs.org/file-type/-/file-type-16.5.3.tgz"
@@ -3465,9 +3477,9 @@ form-data@^3.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-formidable@^2.0.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/formidable/-/formidable-2.1.1.tgz#81269cbea1a613240049f5f61a9d97731517414f"
+formidable@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/formidable/-/formidable-2.1.2.tgz#fa973a2bec150e4ce7cac15589d7a25fc30ebd89"
   dependencies:
     dezalgo "^1.0.4"
     hexoid "^1.0.0"
@@ -3742,7 +3754,7 @@ http-assert@^1.3.0, http-assert@^1.5.0:
     deep-equal "~1.0.1"
     http-errors "~1.8.0"
 
-http-errors@1.8.1, http-errors@^1.6.3, http-errors@^1.7.3, http-errors@~1.8.0:
+http-errors@1.8.1, http-errors@^1.6.3, http-errors@~1.8.0:
   version "1.8.1"
   resolved "https://registry.npmjs.org/http-errors/-/http-errors-1.8.1.tgz"
   dependencies:
@@ -3752,7 +3764,7 @@ http-errors@1.8.1, http-errors@^1.6.3, http-errors@^1.7.3, http-errors@~1.8.0:
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.1"
 
-http-errors@2.0.0:
+http-errors@2.0.0, http-errors@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/http-errors/-/http-errors-2.0.0.tgz"
   dependencies:
@@ -4575,9 +4587,9 @@ koa-convert@^2.0.0:
     co "^4.6.0"
     koa-compose "^4.1.0"
 
-koa@2.13.4:
-  version "2.13.4"
-  resolved "https://registry.npmjs.org/koa/-/koa-2.13.4.tgz"
+koa@^2.14.2:
+  version "2.14.2"
+  resolved "https://registry.yarnpkg.com/koa/-/koa-2.14.2.tgz#a57f925c03931c2b4d94b19d2ebf76d3244863fc"
   dependencies:
     accepts "^1.3.5"
     cache-content-type "^1.0.0"
@@ -4603,25 +4615,24 @@ koa@2.13.4:
     type-is "^1.6.16"
     vary "^1.1.2"
 
-koatty@^3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmjs.org/koatty/-/koatty-3.6.8.tgz"
+koatty@^3.8.3:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/koatty/-/koatty-3.8.3.tgz#c96d1e0d1eeaa9e18d53f6a5e23e5dc74d97767c"
   dependencies:
-    koa "2.13.4"
-    koatty_config "1.1.5"
-    koatty_container "1.7.10"
-    koatty_core "1.6.8"
-    koatty_exception "1.2.7"
-    koatty_lib "1.2.11"
-    koatty_loader "1.0.3"
-    koatty_logger "1.3.14"
-    koatty_payload "1.3.18"
-    koatty_proto "1.1.8"
-    koatty_router "1.7.6"
-    koatty_serve "1.4.10"
-    koatty_trace "1.6.7"
-    reflect-metadata "0.1.13"
-    tslib "2.4.0"
+    koa "^2.14.2"
+    koatty_config "^1.1.6"
+    koatty_container "^1.8.0"
+    koatty_core "^1.7.8"
+    koatty_exception "^1.2.8"
+    koatty_lib "^1.3.2"
+    koatty_loader "^1.1.0"
+    koatty_logger "^2.1.0"
+    koatty_payload "^1.4.4"
+    koatty_proto "^1.1.11"
+    koatty_router "^1.8.6"
+    koatty_serve "^1.5.6"
+    koatty_trace "^1.8.4"
+    koatty_validation "^1.2.8"
 
 koatty_cacheable@^1.3.7:
   version "1.3.7"
@@ -4633,103 +4644,110 @@ koatty_cacheable@^1.3.7:
     koatty_store "^1.x.x"
     tslib "^2.4.0"
 
-koatty_config@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.npmjs.org/koatty_config/-/koatty_config-1.1.5.tgz"
+koatty_config@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/koatty_config/-/koatty_config-1.1.6.tgz#968a6959751e1c6aefe70e52707a8533bc430976"
   dependencies:
     koatty_container "^1.x.x"
     koatty_lib "^1.x.x"
     koatty_loader "^1.x.x"
     rc "^1.2.8"
 
-koatty_container@1.7.10, koatty_container@^1.x.x:
-  version "1.7.10"
-  resolved "https://registry.npmjs.org/koatty_container/-/koatty_container-1.7.10.tgz"
+koatty_container@^1.8.0, koatty_container@^1.x.x:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/koatty_container/-/koatty_container-1.8.0.tgz#2d3894e742f2023ef68c05a0a468bafab382fbdf"
   dependencies:
     koatty_lib "^1.x.x"
+    koatty_logger "^2.x.x"
     reflect-metadata "^0.1.13"
-    tslib "^2.4.0"
+    tslib "^2.5.0"
 
-koatty_core@1.6.8, koatty_core@^1.x.x:
-  version "1.6.8"
-  resolved "https://registry.npmjs.org/koatty_core/-/koatty_core-1.6.8.tgz"
+koatty_core@^1.7.8, koatty_core@^1.x.x:
+  version "1.7.8"
+  resolved "https://registry.yarnpkg.com/koatty_core/-/koatty_core-1.7.8.tgz#41b48c370250fb14cf41ec53c541f886773bb525"
   dependencies:
     http-assert "^1.5.0"
     koa-compose "^4.1.0"
     koatty_container "^1.x.x"
     koatty_exception "^1.x.x"
     koatty_lib "^1.x.x"
-    koatty_logger "^1.x.x"
+    koatty_logger "^2.x.x"
     on-finished "^2.4.1"
-    tslib "^2.4.0"
 
-koatty_exception@1.2.7, koatty_exception@^1.x.x:
-  version "1.2.7"
-  resolved "https://registry.npmjs.org/koatty_exception/-/koatty_exception-1.2.7.tgz"
+koatty_exception@^1.2.8, koatty_exception@^1.x.x:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/koatty_exception/-/koatty_exception-1.2.8.tgz#742320d13c7e6b57ccbd6038f1b90d4c27245765"
   dependencies:
     koatty_container "^1.x.x"
     koatty_lib "^1.x.x"
-    koatty_logger "^1.x.x"
+    koatty_logger "^2.x.x"
 
-koatty_lib@1.2.11, koatty_lib@^1.x.x:
-  version "1.2.11"
-  resolved "https://registry.npmjs.org/koatty_lib/-/koatty_lib-1.2.11.tgz"
+koatty_lib@^1.3.2, koatty_lib@^1.x.x:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/koatty_lib/-/koatty_lib-1.3.2.tgz#82649f0e5afc0ff97b2fe67f306376f9a1a0de39"
   dependencies:
     "@types/lodash" "^4.x.x"
     co "^4.6.0"
     lodash "^4.17.21"
-    moment "^2.29.3"
+    moment "^2.29.4"
     murmurhash "^2.0.1"
-    tslib "^2.4.0"
 
-koatty_loader@1.0.3, koatty_loader@^1.x.x:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/koatty_loader/-/koatty_loader-1.0.3.tgz"
+koatty_loader@^1.1.0, koatty_loader@^1.x.x:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/koatty_loader/-/koatty_loader-1.1.0.tgz#fdf72b64b7cdc9aebe18648512668e8fc30c6898"
   dependencies:
     globby "^11.1.0"
     koatty_lib "^1.x.x"
 
-koatty_logger@1.3.14, koatty_logger@^1.x.x:
+koatty_logger@^1.x.x:
   version "1.3.14"
   resolved "https://registry.npmjs.org/koatty_logger/-/koatty_logger-1.3.14.tgz"
   dependencies:
     koatty_lib "^1.x.x"
 
-koatty_payload@1.3.18:
-  version "1.3.18"
-  resolved "https://registry.npmjs.org/koatty_payload/-/koatty_payload-1.3.18.tgz"
+koatty_logger@^2.1.0, koatty_logger@^2.x.x:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/koatty_logger/-/koatty_logger-2.1.0.tgz#26bdb6336623a69d0336e9142f477b0673ce8437"
   dependencies:
-    formidable "^2.0.1"
+    koatty_lib "^1.x.x"
+    winston "^3.8.2"
+    winston-daily-rotate-file "^4.7.1"
+
+koatty_payload@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/koatty_payload/-/koatty_payload-1.4.4.tgz#e8c33fd13a850e0697bd07e8940dabafeb17ae1c"
+  dependencies:
+    formidable "^2.1.1"
     inflation "^2.0.0"
     koatty_core "^1.x.x"
     koatty_lib "^1.x.x"
-    koatty_logger "^1.x.x"
+    koatty_logger "^2.x.x"
     on-finished "^2.4.1"
-    raw-body "^2.5.1"
-    xml2js "^0.4.23"
+    raw-body "^2.5.2"
+    xml2js "^0.5.0"
 
-koatty_proto@1.1.8, koatty_proto@^1.x.x:
-  version "1.1.8"
-  resolved "https://registry.npmjs.org/koatty_proto/-/koatty_proto-1.1.8.tgz"
+koatty_proto@^1.1.11, koatty_proto@^1.x.x:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/koatty_proto/-/koatty_proto-1.1.11.tgz#4348a241bec17686b873b53fe315f234d4a1a7c0"
   dependencies:
-    "@grpc/grpc-js" "^1.6.7"
-    "@grpc/proto-loader" "^0.6.12"
+    "@grpc/grpc-js" "^1.8.11"
+    "@grpc/proto-loader" "^0.7.5"
     koatty_lib "^1.x.x"
-    protobufjs "^6.11.3"
+    protobufjs "^7.2.2"
 
-koatty_router@1.7.6:
-  version "1.7.6"
-  resolved "https://registry.npmjs.org/koatty_router/-/koatty_router-1.7.6.tgz"
+koatty_router@^1.8.6:
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/koatty_router/-/koatty_router-1.8.6.tgz#366d19239c2d9c7bbe0a09e5a42b71357f444999"
   dependencies:
-    "@koa/router" "^10.1.1"
+    "@koa/router" "^12.0.0"
     koatty_container "^1.x.x"
     koatty_core "^1.x.x"
     koatty_exception "^1.x.x"
     koatty_lib "^1.x.x"
-    koatty_logger "^1.x.x"
+    koatty_logger "^2.x.x"
     koatty_proto "^1.x.x"
     koatty_validation "^1.x.x"
-    tslib "^2.4.0"
+    tslib "^2.4.1"
 
 koatty_schedule@^1.5.6:
   version "1.5.6"
@@ -4743,17 +4761,15 @@ koatty_schedule@^1.5.6:
     reflect-metadata "^0.1.13"
     tslib "^2.4.0"
 
-koatty_serve@1.4.10:
-  version "1.4.10"
-  resolved "https://registry.npmjs.org/koatty_serve/-/koatty_serve-1.4.10.tgz"
+koatty_serve@^1.5.6:
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/koatty_serve/-/koatty_serve-1.5.6.tgz#224c0454cda6a0f855d133631085d088684fc70c"
   dependencies:
-    "@godaddy/terminus" "^4.10.2"
-    "@grpc/grpc-js" "^1.6.7"
+    "@grpc/grpc-js" "^1.8.11"
     koatty_core "^1.x.x"
     koatty_lib "^1.x.x"
-    koatty_logger "^1.x.x"
-    tslib "^2.4.0"
-    ws "^8.7.0"
+    koatty_logger "^2.x.x"
+    ws "^8.12.1"
 
 koatty_store@^1.5.5, koatty_store@^1.x.x:
   version "1.5.5"
@@ -4765,26 +4781,27 @@ koatty_store@^1.5.5, koatty_store@^1.x.x:
     koatty_lib "^1.x.x"
     koatty_logger "^1.x.x"
 
-koatty_trace@1.6.7:
-  version "1.6.7"
-  resolved "https://registry.npmjs.org/koatty_trace/-/koatty_trace-1.6.7.tgz"
+koatty_trace@^1.8.4:
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/koatty_trace/-/koatty_trace-1.8.4.tgz#1aadbb356086bd5d8234277bf8e8c7ea6aa99708"
   dependencies:
     koatty_container "^1.x.x"
     koatty_core "^1.x.x"
     koatty_exception "^1.x.x"
     koatty_lib "^1.x.x"
-    uuid "^8.3.2"
+    opentracing "^0.14.7"
+    uuid "^9.0.0"
 
-koatty_validation@^1.2.4, koatty_validation@^1.x.x:
-  version "1.2.4"
-  resolved "https://registry.npmjs.org/koatty_validation/-/koatty_validation-1.2.4.tgz"
+koatty_validation@^1.2.4, koatty_validation@^1.2.8, koatty_validation@^1.x.x:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/koatty_validation/-/koatty_validation-1.2.8.tgz#845f86d6ff1730f8905a7746fe964e3bca446842"
   dependencies:
-    class-validator "^0.13.2"
+    class-validator "^0.14.0"
     koatty_container "^1.x.x"
     koatty_lib "^1.x.x"
-    koatty_logger "^1.x.x"
+    koatty_logger "^2.x.x"
     reflect-metadata "^0.1.13"
-    tslib "^2.4.0"
+    tslib "^2.5.0"
 
 kuler@^2.0.0:
   version "2.0.0"
@@ -4808,9 +4825,9 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libphonenumber-js@^1.9.43:
-  version "1.10.7"
-  resolved "https://registry.npmjs.org/libphonenumber-js/-/libphonenumber-js-1.10.7.tgz"
+libphonenumber-js@^1.10.14:
+  version "1.10.37"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.10.37.tgz#185264130c9375f17d0c487a288223294579929c"
 
 lines-and-columns@^1.1.6:
   version "1.2.4"
@@ -4918,6 +4935,10 @@ logform@^2.3.2, logform@^2.4.0:
 long@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/long/-/long-4.0.0.tgz"
+
+long@^5.0.0:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/long/-/long-5.2.3.tgz#a3ba97f3877cf1d778eccbcb048525ebb77499e1"
 
 lru-cache@^6.0.0:
   version "6.0.0"
@@ -5087,7 +5108,7 @@ modify-values@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/modify-values/-/modify-values-1.0.1.tgz"
 
-moment@^2.29.3:
+moment@^2.29.1, moment@^2.29.4:
   version "2.29.4"
   resolved "https://registry.npmjs.org/moment/-/moment-2.29.4.tgz"
 
@@ -5207,6 +5228,10 @@ nwsapi@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.0.tgz"
 
+object-hash@^2.0.1:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-2.2.0.tgz#5ad518581eefc443bd763472b8ff2e9c2c0d54a5"
+
 object-inspect@^1.9.0:
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.2.tgz#c0641f26394532f28ab8d796ab954e43c009a8ea"
@@ -5269,6 +5294,10 @@ open@^8.0.3:
 opencollective-postinstall@^2.0.2:
   version "2.0.3"
   resolved "https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz"
+
+opentracing@^0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/opentracing/-/opentracing-0.14.7.tgz#25d472bd0296dc0b64d7b94cbc995219031428f5"
 
 optionator@^0.8.1:
   version "0.8.3"
@@ -5428,9 +5457,13 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz"
 
-path-to-regexp@^6.1.0, path-to-regexp@^6.2.0:
+path-to-regexp@^6.2.0:
   version "6.2.0"
   resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-6.2.0.tgz"
+
+path-to-regexp@^6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.1.tgz#d54934d6798eb9e5ef14e7af7962c945906918e5"
 
 path-type@^3.0.0:
   version "3.0.0"
@@ -5519,9 +5552,9 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-protobufjs@^6.11.3:
-  version "6.11.3"
-  resolved "https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.3.tgz"
+protobufjs@^7.2.2, protobufjs@^7.2.4:
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-7.2.4.tgz#3fc1ec0cdc89dd91aef9ba6037ba07408485c3ae"
   dependencies:
     "@protobufjs/aspromise" "^1.1.2"
     "@protobufjs/base64" "^1.1.2"
@@ -5533,9 +5566,8 @@ protobufjs@^6.11.3:
     "@protobufjs/path" "^1.1.2"
     "@protobufjs/pool" "^1.1.0"
     "@protobufjs/utf8" "^1.1.0"
-    "@types/long" "^4.0.1"
     "@types/node" ">=13.7.0"
-    long "^4.0.0"
+    long "^5.0.0"
 
 proxy-addr@~2.0.7:
   version "2.0.7"
@@ -5614,9 +5646,18 @@ raw-body@2.4.3:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-raw-body@^2.2.0, raw-body@^2.5.1:
+raw-body@^2.2.0:
   version "2.5.1"
   resolved "https://registry.npmjs.org/raw-body/-/raw-body-2.5.1.tgz"
+  dependencies:
+    bytes "3.1.2"
+    http-errors "2.0.0"
+    iconv-lite "0.4.24"
+    unpipe "1.0.0"
+
+raw-body@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.5.2.tgz#99febd83b90e08975087e8f1f9419a149366b68a"
   dependencies:
     bytes "3.1.2"
     http-errors "2.0.0"
@@ -5769,7 +5810,7 @@ redis-parser@^3.0.0:
   dependencies:
     redis-errors "^1.0.0"
 
-reflect-metadata@0.1.13, reflect-metadata@^0.1.13:
+reflect-metadata@^0.1.13:
   version "0.1.13"
   resolved "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.1.13.tgz"
 
@@ -6159,10 +6200,6 @@ statuses@2.0.1:
   version "1.5.0"
   resolved "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz"
 
-stoppable@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/stoppable/-/stoppable-1.1.0.tgz"
-
 streamsearch@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz"
@@ -6454,13 +6491,17 @@ ts-node@^10.x.x:
     v8-compile-cache-lib "^3.0.0"
     yn "3.1.1"
 
-tslib@2.4.0, tslib@^2.0.1, tslib@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
-
 tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
+
+tslib@^2.0.1, tslib@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
+
+tslib@^2.4.1, tslib@^2.5.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.0.tgz#b295854684dbda164e181d259a22cd779dcd7bc3"
 
 tsscmp@1.0.6:
   version "1.0.6"
@@ -6609,9 +6650,9 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz"
 
-uuid@^8.3.2:
-  version "8.3.2"
-  resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
+uuid@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
 
 v8-compile-cache-lib@^3.0.0:
   version "3.0.0"
@@ -6784,7 +6825,16 @@ wildcard@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/wildcard/-/wildcard-2.0.0.tgz"
 
-winston-transport@^4.5.0:
+winston-daily-rotate-file@^4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/winston-daily-rotate-file/-/winston-daily-rotate-file-4.7.1.tgz#f60a643af87f8867f23170d8cd87dbe3603a625f"
+  dependencies:
+    file-stream-rotator "^0.6.1"
+    object-hash "^2.0.1"
+    triple-beam "^1.3.0"
+    winston-transport "^4.4.0"
+
+winston-transport@^4.4.0, winston-transport@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npmjs.org/winston-transport/-/winston-transport-4.5.0.tgz"
   dependencies:
@@ -6796,6 +6846,22 @@ winston@^3.3.3:
   version "3.6.0"
   resolved "https://registry.npmjs.org/winston/-/winston-3.6.0.tgz"
   dependencies:
+    "@dabh/diagnostics" "^2.0.2"
+    async "^3.2.3"
+    is-stream "^2.0.0"
+    logform "^2.4.0"
+    one-time "^1.0.0"
+    readable-stream "^3.4.0"
+    safe-stable-stringify "^2.3.1"
+    stack-trace "0.0.x"
+    triple-beam "^1.3.0"
+    winston-transport "^4.5.0"
+
+winston@^3.8.2:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/winston/-/winston-3.10.0.tgz#d033cb7bd3ced026fed13bf9d92c55b903116803"
+  dependencies:
+    "@colors/colors" "1.5.0"
     "@dabh/diagnostics" "^2.0.2"
     async "^3.2.3"
     is-stream "^2.0.0"
@@ -6848,17 +6914,17 @@ ws@^7.4.6:
   version "7.5.7"
   resolved "https://registry.npmjs.org/ws/-/ws-7.5.7.tgz"
 
-ws@^8.7.0:
-  version "8.8.0"
-  resolved "https://registry.npmjs.org/ws/-/ws-8.8.0.tgz"
+ws@^8.12.1:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
 
 xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/xml-name-validator/-/xml-name-validator-3.0.0.tgz"
 
-xml2js@^0.4.23:
-  version "0.4.23"
-  resolved "https://registry.npmjs.org/xml2js/-/xml2js-0.4.23.tgz"
+xml2js@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.5.0.tgz#d9440631fbb2ed800203fad106f2724f62c493b7"
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "~11.0.0"
@@ -6910,6 +6976,10 @@ yargs-parser@^21.0.0:
   version "21.0.1"
   resolved "https://registry.npmjs.org/yargs-parser/-/yargs-parser-21.0.1.tgz"
 
+yargs-parser@^21.1.1:
+  version "21.1.1"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.1.1.tgz#9096bceebf990d21bb31fa9516e0ede294a77d35"
+
 yargs@^15.3.1:
   version "15.4.1"
   resolved "https://registry.npmjs.org/yargs/-/yargs-15.4.1.tgz"
@@ -6949,6 +7019,18 @@ yargs@^17.1.1:
     string-width "^4.2.3"
     y18n "^5.0.5"
     yargs-parser "^21.0.0"
+
+yargs@^17.7.2:
+  version "17.7.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.7.2.tgz#991df39aca675a192b816e1e0363f9d75d2aa269"
+  dependencies:
+    cliui "^8.0.1"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.3"
+    y18n "^5.0.5"
+    yargs-parser "^21.1.1"
 
 ylru@^1.2.0:
   version "1.2.1"

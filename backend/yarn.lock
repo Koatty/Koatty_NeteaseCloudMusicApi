@@ -2470,6 +2470,10 @@ content-type@^1.0.4, content-type@~1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz"
 
+content-type@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.5.tgz#8b773162656d1d1086784c8f23a54ce6d73d7918"
+
 conventional-changelog-angular@^5.0.11, conventional-changelog-angular@^5.0.12:
   version "5.0.13"
   resolved "https://registry.npmjs.org/conventional-changelog-angular/-/conventional-changelog-angular-5.0.13.tgz"
@@ -2766,7 +2770,7 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.3:
+debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
   version "4.3.3"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.3.tgz"
   dependencies:
@@ -2777,6 +2781,12 @@ debug@^3.2.7:
   resolved "https://registry.npmjs.org/debug/-/debug-3.2.7.tgz"
   dependencies:
     ms "^2.1.1"
+
+debug@^4.3.4:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  dependencies:
+    ms "2.1.2"
 
 decamelize-keys@^1.1.0:
   version "1.1.0"
@@ -3411,9 +3421,9 @@ file-stream-rotator@^0.6.1:
   dependencies:
     moment "^2.29.1"
 
-file-type@16.5.3:
-  version "16.5.3"
-  resolved "https://registry.npmjs.org/file-type/-/file-type-16.5.3.tgz"
+file-type@^16.5.4:
+  version "16.5.4"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-16.5.4.tgz#474fb4f704bee427681f98dd390058a172a6c2fd"
   dependencies:
     readable-web-to-node-stream "^3.0.0"
     strtok3 "^6.2.4"
@@ -5150,16 +5160,16 @@ murmurhash@^2.0.1:
   resolved "https://registry.npmjs.org/murmurhash/-/murmurhash-2.0.1.tgz"
 
 music-metadata@^7.5.3:
-  version "7.12.2"
-  resolved "https://registry.npmjs.org/music-metadata/-/music-metadata-7.12.2.tgz"
+  version "7.13.4"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.13.4.tgz#17d2d3d894fdee9899cc5b08110f790788758f7e"
   dependencies:
     "@tokenizer/token" "^0.3.0"
-    content-type "^1.0.4"
-    debug "^4.3.3"
-    file-type "16.5.3"
+    content-type "^1.0.5"
+    debug "^4.3.4"
+    file-type "^16.5.4"
     media-typer "^1.1.0"
-    strtok3 "^6.2.4"
-    token-types "^4.2.0"
+    strtok3 "^6.3.0"
+    token-types "^4.2.1"
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -6306,7 +6316,7 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz"
 
-strtok3@^6.2.4:
+strtok3@^6.2.4, strtok3@^6.3.0:
   version "6.3.0"
   resolved "https://registry.npmjs.org/strtok3/-/strtok3-6.3.0.tgz"
   dependencies:
@@ -6450,9 +6460,16 @@ toidentifier@1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.1.tgz"
 
-token-types@^4.1.1, token-types@^4.2.0:
+token-types@^4.1.1:
   version "4.2.0"
   resolved "https://registry.npmjs.org/token-types/-/token-types-4.2.0.tgz"
+  dependencies:
+    "@tokenizer/token" "^0.3.0"
+    ieee754 "^1.2.1"
+
+token-types@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/token-types/-/token-types-4.2.1.tgz#0f897f03665846982806e138977dbe72d44df753"
   dependencies:
     "@tokenizer/token" "^0.3.0"
     ieee754 "^1.2.1"
